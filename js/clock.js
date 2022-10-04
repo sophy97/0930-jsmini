@@ -2,7 +2,7 @@
 const clock = document.querySelector("#clock");
 
 function getClock () {
-    // 현재 시간을 가져오는 객체
+// 현재 시간을 가져오는 객체
 const date = new Date();
 
 // 00:00:00 포맷을 맞추기 위해 String의 padStart 메소드를 사용

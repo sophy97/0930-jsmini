@@ -1,30 +1,23 @@
-html {
-	height: 100%;
+.fixclock {
+    position:relative;
+    font-family: 'Concert One', cursive;
+    font-size: 2.5em;
+    text-align: center;
+    color: rgb(241, 183, 183);
+    margin: 50px 10px;
+    font-weight: lighter;
 }
-
 .hidden {
     display: none;
 }
-
-#clock {
-    font-family: 'Concert One', cursive;
-    text-align: center;
-    border: 3px solid rgb(226, 155, 155);
-    margin: 150px 200px;
-    border-radius: 40%;
-    color: rosybrown;
-    font-size: 3.5em;
-    font-weight: lighter;
-}
-
 .main {
-    margin: 100px 120px;
-    text-align: center;
+    position: relative;
+    margin:auto;
     text-align: center;
     color: aliceblue;
 }
 
-/* type이text일때의 속성 전부 꾸미기 */
+/* type이 text일때의 속성 전부 꾸미기 */
 form input[type="text"] {
     background-color: transparent;
     border:none;
@@ -32,7 +25,7 @@ form input[type="text"] {
 }
 form input[type="text"]:focus {
     outline: none;
-    color:blanchedalmond;
+    color:rgb(238, 182, 230);
 }
 
 form input[type="submit"],
@@ -44,21 +37,16 @@ form input[type="button"],
     padding: 5px 10px;
     color: azure;
 }
-form input[type="submit"]:hover,
-form input[type="button"]:hover {
-    background-color: rgba(255, 255, 255, 0.5);
-    color:white;
-    font-weight: bold;
-}
 
 #todo-board {
+    display: inline-block;
+    text-align: center;
     list-style: none;
-    margin-right: 50px;
 }
 
 #todo-board li {
     font-family: 'East Sea Dokdo', cursive;
-    font-size: 1.2em;
+    font-size: 1.3em;
     font-weight: lighter;
     clear: both;
     margin-top: 10px;
@@ -70,43 +58,22 @@ form input[type="button"]:hover {
 }
 
 #title {
-    font-size: 2.5em;
+    font-size: 2em;
     font-weight: lighter;
     font-family: 'East Sea Dokdo', cursive;
 }
 
 
-/* 반응형처럼 모바일크기 만들기 */
-@media ( max-width: 768px ) {
-    #clock {
-        font-family: 'Concert One', cursive;
-        border: none;
-        text-align: center;
-        color: rosybrown;
+@media ( max-width: 768px ){
+    .fixclock {
+        position: relative;
         font-size: 1.2em;
-        font-weight: lighter;
     }
-    #title {
-        font-size: xx-small;
-        font-weight: lighter;
-    }
-    #todo-board li {
-        font-family: 'East Sea Dokdo', cursive;
-        font-size: 0.5em;
-        font-weight: lighter;
-        clear: both;
-        margin-top: 5px;
-    }
-    form input[type="submit"],
-    form input[type="button"],
-    #todo-board li button {
-    border-radius: 40px;
-    background-color: transparent;
-    border: 0.5px solid rosybrown;
-    color: azure;
-}
-    #todo-board > li button {
-        float:right;
-        font-size:xx-small;
+    #login-form, #todo-form, #todo-board {
+        position: relative;
+        margin:0px;
+        text-align: center;
+        text-align: center;
+        color: aliceblue;
     }
 }

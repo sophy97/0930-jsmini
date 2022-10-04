@@ -58,8 +58,10 @@ function todoCheck(e) {
     const li = e.target.parentNode;
     if(e.target.checked){
         li.style.color = "darkgray";
+        li.style.textDecorationLine ="line-through";
     } else {
         li.style.color = "white";
+        li.style.textDecorationLine ="none";
     }
 }
 // X버튼 이벤트리스너에 들어갈 함수 만들기
